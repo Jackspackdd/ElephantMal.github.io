@@ -16,17 +16,22 @@ html {
 
 }
 
-.intro-grid{
-	display: grid;
-	grid-template-columns: 50% 50% ;
-	
+.container2 {
+  grid-template-columns: 50% 50%;
 }
 
-.why {
-	margin-left: -8rem;
-  
-  
+.intro-grid{
+	display: grid;
+	grid-template-columns: 45% 55% ;
 }
+
+@media screen and (max-width: 700px) {
+	.intro-grid {
+		display: block;
+		margin-bottom: 48rem;
+	}
+}
+
 
 
 .tabp {
@@ -73,7 +78,7 @@ html {
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  border: 1px solid #ccc;
+
   width: 50%;
   border-left: none;
   height: 300px;
@@ -95,6 +100,8 @@ html {
 
 .who {
 	margin-top: 7rem;
+	padding-right: 2rem;
+
 
 }
 
@@ -349,6 +356,11 @@ html {
 #myDIV {
 	overflow: scroll;
 	width: 100%;
+}
+
+.mySlides {
+  height: auto;
+  max-width: 50%;
 }
 
 .footernav {
