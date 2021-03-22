@@ -14,3 +14,4 @@ tablinks[i].className.replace(" active", "");
     document.getElementById(whatGet).style.display = 
     "block";
     evt.currentTarget.className += " active";
+}
