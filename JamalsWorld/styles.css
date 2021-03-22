@@ -1,9 +1,15 @@
 body {
   font-family: lucida sans unicode;
+  font-size: 16px;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.view {
+  color: #0D1977;
+  padding-left: 60px;
 }
 
 
@@ -16,20 +22,12 @@ html {
 
 }
 
-.container2 {
-  grid-template-columns: 50% 50%;
-}
-
 .intro-grid{
 	display: grid;
-	grid-template-columns: 45% 55% ;
-}
-
-@media screen and (max-width: 700px) {
-	.intro-grid {
-		display: block;
-		margin-bottom: 48rem;
-	}
+	grid-template-columns: 50% 50%;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+	
 }
 
 
@@ -78,12 +76,13 @@ html {
 .tabcontent {
   float: left;
   padding: 0px 12px;
-
+  border: 1px solid #ccc;
   width: 50%;
   border-left: none;
   height: 300px;
   display: none;
   color: #044B6D;
+  margin-bottom: 100px;
 }
 
 
@@ -96,12 +95,9 @@ html {
 
 
 
-
-
 .who {
 	margin-top: 7rem;
-	padding-right: 2rem;
-
+  margin-left: 5rem;
 
 }
 
@@ -185,6 +181,15 @@ html {
   }
 }
 
+
+
+
+
+@media screen and (max-width: 600px) {
+  .intro-grid {
+    display: block;
+  }
+}
 
 
 .button {
@@ -281,47 +286,48 @@ html {
   transform: translateY(4px);
 }
 
-.ComputerPic {
+.phonePic {
 	height: auto;
-	width: 100%;
-	max-width: 150px;
+  width: 100%;
+  max-width: 150px;
 	padding: 15px;
-	opacity: 50%;
 	transition:opacity 0.8s
 }
 
-.ComputerPic:hover {
-	opacity:100%;
-	transition:opacity 0.5s
+.phonePic:hover {
+	-ms-transform: scale(2.0); /* IE 9 */
+  -webkit-transform: scale(2.0); /* Safari 3-8 */
+  transform: scale(2.0); 
 }
 
-.TabletPic {
-	height: auto;
-	width: 100%;
-	max-width: 150px;
-	padding: 15px;
-	opacity: 50%;
-	transition:opacity 0.8s
+
+.tabPic {
+  height: auto;
+  width: 100%;
+  max-width: 150px;
+  padding: 15px;
+  transition:opacity 0.8s
 }
 
-.TabletPic:hover {
-	opacity:100%;
-	transition:opacity 0.5s
+.tabPic:hover {
+  -ms-transform: scale(2.5); /* IE 9 */
+  -webkit-transform: scale(2.5); /* Safari 3-8 */
+  transform: scale(2.5); 
 }
 
-.PhonePic {
-	height: auto;
-	width: 100%;
-	max-width: 150px;
-	padding: 15px;
-	opacity: 50%;
-	transition:opacity 0.8s
+
+.computerPic {
+  height: auto;
+  width: 100%;
+  max-width: 150px;
+  padding: 15px;
+  transition:opacity 0.8s
 }
 
-.PhonePic:hover {
-	opacity:100%;
-	transition:opacity 0.5s
+.computerPic:hover {
+  transform: scale(4.0); 
 }
+
 
 .welcome {
 	margin-left: 1rem;
@@ -335,9 +341,7 @@ html {
 	margin-left: 7rem;
 }
 
-.contactinfo {
-	margin-right: 200px;
-}
+
 
 .description {
 	border: 1px solid black;
@@ -351,6 +355,7 @@ html {
 	color: white;
 	padding: 70px;
   display: grid;
+  margin-top: 135px;
 }
 
 #myDIV {
@@ -358,14 +363,9 @@ html {
 	width: 100%;
 }
 
-.mySlides {
-  height: auto;
-  max-width: 50%;
-}
-
 .footernav {
 	padding-top: 20px;
-	margin-bottom: 2px;
+	margin-bottom: 1px;
   color: #0D1977;
 }
 
@@ -432,8 +432,8 @@ html {
   }
 }
 
-#contactme {
-  margin-top: 125px;
+#work {
+  color: #0D1977;
 }
 
 .info {
@@ -446,19 +446,54 @@ html {
   color: white;
 }
 
-#work {
-  color: #0D1977;
+.Slide {
+display: none;
+}
+.portpic {
+vertical-align: middle;
+width: 100%;
+height: 400px;
+}
+.slideContainer {
+max-width: 600px;
+position: relative;
+margin: auto;
+}
+.prevBtn,
+.nextBtn {
+position: absolute;
+top: 50%;
+width: auto;
+padding: 10px;
+background-color: #0D1977;
+color: white;
+font-weight: bolder;
+font-size: 18px;
+}
+.nextBtn {
+right: 0;
+}
+.Caption {
+color: #0D1977;
+font-weight: bold;
+text-decoration: underline;
+font-size: 25px;
+padding:
+width: 100%;
+text-align: center;
 }
 
-.portshift {
-  text-align: center;
-  margin-left: 15.3rem;
+
+
+
+
+@media screen and (max-width: 600px) {
+  .slideContainer {
+    margin-top: 750px;
+  }
 }
 
 
-.workback {
-  margin: 50px;
-}
 
 .logoimg {
   margin-left: -8px;
